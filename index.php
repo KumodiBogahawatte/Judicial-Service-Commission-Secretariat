@@ -10,9 +10,9 @@
 
     <div class="hero-overlay"></div>
 
-    <div class="hero-content">
-        <h2>Safeguarding Judicial Independence & Administrative Integrity</h2>
-        <p>Supporting the appointment, transfer, and discipline of the Judicial Service of Sri Lanka.</p>
+    <div class="hero-content" id="animated-heading">
+        <h2>Judicial Service Commission Secretariat of Sri Lanka</h2>
+        <p>Strengthening Sri Lanka’s judicial administration through independence and accountability.</p>
 
         <a href="#" class="btn-gold">View Circulars & Notices</a>
     </div>

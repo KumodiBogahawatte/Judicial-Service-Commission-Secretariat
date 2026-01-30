@@ -41,10 +41,10 @@
                 </div>
                 <div style="color: #444; font-size: 1.01rem; margin-bottom: 8px;">Transfer notice and related documents for judicial officers.</div>
                 <div style="display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 8px;">
-                    <a href="#" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Letter (2025-01-24)</a>
-                    <a href="#" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Court Registrar</a>
-                    <a href="#" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Court Family Counselor</a>
-                    <a href="#" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Development Officer</a>
+                    <a href="assets/Doc1.pdf" download target="_blank" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Letter (2025-01-24)</a>
+                    <a href="assets/Doc1.pdf" download target="_blank" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Court Registrar</a>
+                    <a href="assets/Doc1.pdf" download target="_blank" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Court Family Counselor</a>
+                    <a href="assets/Doc1.pdf" download target="_blank" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Development Officer</a>
                     <!-- More links... -->
                 </div>
             </div>

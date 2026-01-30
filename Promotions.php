@@ -43,7 +43,7 @@
                 </div>
                 <div style="color: #444; font-size: 1.01rem; margin-bottom: 8px;">Download the latest promotion list and related documents for judicial officers.</div>
                 <div style="display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 8px;">
-                    <a href="#" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Promotion List PDF</a>
+                    <a href="assets/Doc1.pdf" download target="_blank" style="color: var(--gold-accent); text-decoration: underline; font-weight: 500;">Promotion List PDF</a>
                     <!-- More links... -->
                 </div>
             </div>
