@@ -34,7 +34,7 @@
 </script>
 <br><br>
 
-<div class="reveal" style="padding: 60px 8%; display:flex; gap:40px; flex-wrap:wrap;">
+<div class="reveal" style="padding: 80px 8%; display:flex; gap:40px; flex-wrap:wrap;">
     <div style="flex: 1; min-width: 300px;">
         <h4 style="color:var(--gold-accent); text-transform:uppercase;">Welcome to</h4>
         <h2 style="color:var(--primary-color); font-size:2.5rem; margin-bottom:20px;">
@@ -224,7 +224,7 @@
     </div>
 </section>
 
-<section class="reveal" style="padding: 60px 8%; background-color: #fff; border-top: 1px solid #eee;">
+<section class="reveal" style="padding: 80px 8%; background-color: #fff; border-top: 1px solid #eee;">
     <div style="display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap;">
         <div style="flex: 2;">
             <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 10px;">

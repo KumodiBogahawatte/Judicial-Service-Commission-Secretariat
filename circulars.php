@@ -1,4 +1,3 @@
-
 <?php 
     // include 'db_connect.php'; 
     include 'includes/header.php'; 
@@ -46,57 +45,57 @@
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">1</td>
                         <td class="circulars-table-td circulars-table-td-name">Instructions / Measures in Relation to Prevention and Control of COVID 19 in Courts - JSC-SEC-COR-11 (2021-04-27)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">2</td>
                         <td class="circulars-table-td circulars-table-td-name">Instructions / Measures in Relation to Prevention and Control of COVID 19 in Courts - JSC-SEC-COR-11.1 (2021.04.30)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">3</td>
                         <td class="circulars-table-td circulars-table-td-name">Instructions / Measures in Relation to Prevention and Control of COVID 19 in Courts - JSC-SEC-COR-12 (2021.05.02)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">4</td>
                         <td class="circulars-table-td circulars-table-td-name">Instructions in relation to functioning of Courts in view of the revised Health Guidelines - JSC-SEC-COR-16 (2021-08-19)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">5</td>
                         <td class="circulars-table-td circulars-table-td-name">Instructions in relation to functioning of all Courts while quarantine curfew is in force - JSC-SEC-COR-17 (2021-08-21)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">6</td>
                         <td class="circulars-table-td circulars-table-td-name">Instructions in relation to functioning of all Courts while Quarantine Curfew is in force - JSC-SEC-COR-17(i) (2021-09-13)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">7</td>
                         <td class="circulars-table-td circulars-table-td-name">Instructions in relation to functioning of Courts in view of the lifting of islandwide quarantine curfew - JSC-SEC-COR-18 (2021-10-01)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">8</td>
                         <td class="circulars-table-td circulars-table-td-name">Instruction in relation to Functioning of Courts in view of the Lifting of Island-Wide Quarantine Curfew - JSC-SEC-COR-18(i) (2021-11-01)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">9</td>
                         <td class="circulars-table-td circulars-table-td-name">Reports Field Outside the Purview of the Law - JSC-SEC-CIR-450 (2121-12-13)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">10</td>
                         <td class="circulars-table-td circulars-table-td-name">Notices in relation to the Languages of the Courts - JSC-SEC-CIR-451 (2022-01-10)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                     <tr>
                         <td class="circulars-table-td circulars-table-td-num">11</td>
                         <td class="circulars-table-td circulars-table-td-name">Instructions in relation to functioning of Courts - JSC-SEC-COR-19 (2022-01-10)</td>
-                        <td class="circulars-table-td circulars-table-td-download"><a href="#" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
+                        <td class="circulars-table-td circulars-table-td-download"><a  href="assets/Doc1.pdf" download target="_blank" class="circulars-download-btn"><i class="fas fa-download"></i> Download</a></td>
                     </tr>
                 </tbody>
             </table>

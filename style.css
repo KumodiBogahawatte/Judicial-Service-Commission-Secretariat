@@ -1443,29 +1443,40 @@ footer {
 
 /* === Blog Card Styles to Match Supreme Court Example === */
 .blog-section {
-  padding: 80px 8%;
+  padding: 60px 8%;
   background: var(--bg-light);
 }
 .blog-list {
   display: grid;
-  grid-template-columns: repeat(5, 250px);
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   width: 100%;
-  overflow-x: auto;
 }
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
+  .blog-section {
+    padding: 40px 5%;
+  }
   .blog-list {
-    grid-template-columns: repeat(5, 150px);
-    width: max-content;
-    min-width: 100%;
-    overflow-x: auto;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
   }
 }
 @media (max-width: 700px) {
+  .blog-section {
+    padding: 30px 4%;
+  }
   .blog-list {
-    grid-template-columns: repeat(1, 150px);
-    gap: 6px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .blog-section {
+    padding: 20px 3%;
+  }
+  .blog-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
 .blog-card {
@@ -1474,7 +1485,7 @@ footer {
   border-radius: 8px;
   overflow: hidden;
   min-height: 300px;
-  max-width: 250px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -2756,12 +2767,12 @@ blockquote span {
 .download-card {
   background: #f9f7ed;
   border-radius: 10px;
-  box-shadow: 0 2px 12px rgba(61,51,15,0.07);
+  box-shadow: 0 2px 12px rgba(61, 51, 15, 0.07);
   padding: 22px 18px 18px 18px;
   transition: box-shadow 0.2s;
 }
 .download-card:hover {
-  box-shadow: 0 4px 18px rgba(61,51,15,0.13);
+  box-shadow: 0 4px 18px rgba(61, 51, 15, 0.13);
 }
 .download-card i {
   color: var(--gold-accent);
@@ -3118,6 +3129,404 @@ blockquote span {
 }
 
 /* ========================================= */
+/* === Gallery Page STYLES  === */
+/* ========================================= */
+.gallery-section {
+  padding: 80px 8%; /* Match standard section-padding used elsewhere */
+  min-height: 400px;
+  background: #fff;
+}
+
+.gallery-folders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  padding: 20px 0;
+}
+
+.folder-item {
+  background: #f9f7ed;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(61, 51, 15, 0.07);
+  padding: 32px 18px 28px 18px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  max-width: 320px;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+  opacity: 0;
+  transform: translateY(20px);
+  border: 2px solid #f0f0f0;
+  margin-bottom: 0;
+}
+
+.folder-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.folder-item:hover {
+  border-color: #d1b24a;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 18px rgba(209, 178, 74, 0.13);
+}
+
+.folder-icon {
+  font-size: 3em;
+  color: #d1b24a;
+  margin-bottom: 15px;
+}
+
+.folder-item h3 {
+  color: #333;
+  margin: 10px 0;
+  font-size: 1.13em;
+}
+
+.folder-count {
+  color: #999;
+  font-size: 0.95em;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.back-button button {
+  background: #d1b24a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.back-button button:hover {
+  background: #bfa13a;
+}
+
+.folder-title {
+  color: #d1b24a;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #f0f0f0;
+  min-width: 220px;
+  flex: 1 1 220px;
+  max-width: 320px;
+  aspect-ratio: 4/3;
+  box-shadow: 0 2px 12px rgba(61, 51, 15, 0.07);
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .gallery-section {
+    padding: 40px 2%;
+  }
+  .gallery-folders,
+  .gallery-grid {
+    gap: 14px;
+  }
+  .folder-item,
+  .gallery-item {
+    min-width: 140px;
+    max-width: 100%;
+    padding: 18px 8px 14px 8px;
+  }
+}
+
+/* Folder View Styles */
+.gallery-folders {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.folder-item {
+  background: #fff;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.folder-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.folder-item:hover {
+  border-color: #d1b24a;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(209, 178, 74, 0.2);
+}
+
+.folder-icon {
+  font-size: 4em;
+  color: #d1b24a;
+  margin-bottom: 15px;
+}
+
+.folder-item h3 {
+  color: #333;
+  margin: 10px 0;
+  font-size: 1.3em;
+}
+
+.folder-count {
+  color: #999;
+  font-size: 0.9em;
+}
+
+/* Back Button */
+.back-button {
+  margin-bottom: 20px;
+}
+
+.back-button button {
+  background: #d1b24a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.back-button button:hover {
+  background: #bfa13a;
+}
+
+.folder-title {
+  color: #d1b24a;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  background: #f0f0f0;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 10002;
+  transition: color 0.3s ease;
+}
+
+.close-lightbox:hover {
+  color: #d1b24a;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(209, 178, 74, 0.8);
+  color: white;
+  border: none;
+  font-size: 2em;
+  padding: 20px 15px;
+  cursor: pointer;
+  z-index: 10001;
+  transition: all 0.3s ease;
+}
+
+.lightbox-nav:hover {
+  background: rgba(209, 178, 74, 1);
+}
+
+.lightbox-nav.prev {
+  left: 20px;
+}
+
+.lightbox-nav.next {
+  right: 20px;
+}
+
+.lightbox-image-container {
+  max-width: 85%;
+  max-height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: grab;
+}
+
+#lightbox-image.zoomed {
+  cursor: move;
+}
+
+.lightbox-controls {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  gap: 10px;
+}
+
+.lightbox-controls button {
+  background: rgba(209, 178, 74, 0.8);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+
+.lightbox-controls button:hover {
+  background: rgba(209, 178, 74, 1);
+}
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gallery-folders {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .lightbox-nav {
+    padding: 15px 10px;
+    font-size: 1.5em;
+  }
+
+  .folder-icon {
+    font-size: 3em;
+  }
+}
+
+/* ========================================= */
 /* === Seniority List Page STYLES (Sub-menus) === */
 /* ========================================= */
 
@@ -3409,5 +3818,139 @@ blockquote span {
   .Judge-btn {
     padding: 10px 16px;
     font-size: 0.95rem;
+  }
+}
+
+/* ========================================= */
+/* === FAQ PAGE STYLES === */
+/* ========================================= */
+
+.faq-section {
+  padding: 80px 8%;
+  background: #fff;
+}
+
+.faq-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--gold-accent);
+  box-shadow: 0 2px 8px rgba(209, 178, 74, 0.15);
+}
+
+.faq-question {
+  width: 100%;
+  background: #fff;
+  border: none;
+  padding: 20px 25px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.faq-question:hover {
+  color: var(--gold-accent);
+}
+
+.faq-question i {
+  font-size: 0.9rem;
+  color: var(--gold-accent);
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background: #f9f9f9;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 20px 25px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.faq-answer p {
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.faq-answer ul {
+  margin-top: 10px;
+  color: #555;
+}
+
+.faq-answer ul li {
+  margin-bottom: 8px;
+}
+
+.faq-answer a {
+  color: var(--gold-accent);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.faq-answer a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive FAQ */
+@media (max-width: 991px) {
+  .faq-section {
+    padding: 60px 5%;
+  }
+  
+  .faq-question {
+    font-size: 1rem;
+    padding: 18px 20px;
+  }
+  
+  .faq-answer p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 40px 4%;
+  }
+  
+  .faq-question {
+    font-size: 0.95rem;
+    padding: 15px 18px;
+  }
+  
+  .faq-item.active .faq-answer {
+    padding: 15px 18px;
+  }
+  
+  .faq-answer p,
+  .faq-answer ul {
+    font-size: 0.9rem;
   }
 }
