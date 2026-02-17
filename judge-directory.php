@@ -7,11 +7,11 @@
 <section class="page-hero">
     <div class="overlay"></div>
     <div class="container">
-        <h1>Judge Directory</h1>
+        <h1>Judges Directory</h1>
         <nav class="breadcrumb">
             <a href="index.php">Home</a>
             <span>&gt;</span>
-            <span style="color: #d1b24a;">Judge Directory</span>
+            <span style="color: #d1b24a;">Judges Directory</span>
         </nav>
     </div>
 </section>

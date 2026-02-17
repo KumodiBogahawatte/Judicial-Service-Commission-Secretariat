@@ -25,7 +25,7 @@
                 <div class="folder-icon">
                     <i class="fas fa-folder"></i>
                 </div>
-                <h3>Environment</h3>
+                <h3>Location</h3>
                 <p class="folder-count">0 photos</p>
             </div>
             

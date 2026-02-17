@@ -18,7 +18,7 @@
         <div style="flex: 1; min-width: 300px;">
             <p style="color: var(--gold-accent); text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 10px;">Latest Documents & Announcements</p>
             <h2 style="font-size: 2.5rem; color: var(--primary-color); line-height: 1.2;">
-                Judicial Service<span style="font-family: 'Playfair Display', serif; font-style: italic; color: var(--gold-accent);">Recruitment & Transfers</span>
+                Judicial Service Commission Secretariat<span style="font-family: 'Playfair Display', serif; font-style: italic; color: var(--gold-accent);">Recruitment & Transfers</span>
             </h2>
             <div style="width: 50px; height: 3px; background-color: var(--gold-accent); margin-top: 15px;"></div>
         </div>

@@ -28,7 +28,8 @@
         <div class="footer-col">
             <h3>Support Services</h3>
             <a href="Contact-Details.php">Contact Us</a>
-            <a href="#">FAQ</a>
+            <a href="FAQ">FAQ</a>
+            <a href="#">Vacancy</a>
         </div>
 
         <div class="footer-col">
@@ -58,7 +59,7 @@
         <span>Courts Directory</span>
     </a>
     <a href="judge-directory" class="Judge-btn">
-        <span>Judge Directory</span>
+        <span>Judges Directory</span>
     </a>
 </div>
     <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
